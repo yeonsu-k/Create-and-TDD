@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "src", // import시 루트 url설정
-    "target": "esnext", // 타입스크립트 파일을 어떤 버전의 자바스크립트로 바꿔줄지
+    "target": "es5", // 타입스크립트 파일을 어떤 버전의 자바스크립트로 바꿔줄지
     "module": "esnext", // 사용할 import 문법
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true, // js 파일이 있으면 사용(js 파일을 ts에서 import가능)

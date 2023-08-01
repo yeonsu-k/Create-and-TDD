@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src", // import시 루트 url설정
+    "target": "esnext", // 타입스크립트 파일을 어떤 버전의 자바스크립트로 바꿔줄지
+    "module": "esnext", // 사용할 import 문법
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true, // js 파일이 있으면 사용(js 파일을 ts에서 import가능)
+    "jsx": "preserve", // jsx를 출력 일부로 유지하며 babel과 같은 다른 변환단계에서 추가로 사용 가능
+    "sourceMap": true, // 배포 단계의 버그를 더 쉽게 잡기 위해 빌드 결과물 .map파일로 생성
+    "outDir": "./build", //컴파일 후 생성되는 js파일이 저장될 폴더 명
+    "isolatedModules": true, // 각 파일을 분리된 모듈로 트랜스파일링의 진행 여부
+    "resolveJsonModule": true, // TypeScrip에서 json파일을 불러오기
+    "strict": true, // 모든 엄격한 타입 확인 옵션의 활성화 여부
+    "moduleResolution": "node", // 모듈의 해석 방법 Node.js
+    "allowSyntheticDefaultImports": true, // default export가 아닌 모듈에서도 default import가 가능
+    "esModuleInterop": true, // 모든 imports에 대한 namespace 생성을 통해 CommonJS와 ES Modules 간의 상호작용의 가능
+    "forceConsistentCasingInFileNames": true // 일관되지 않는 참조의 허용
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+  "ignorePatterns": ["build", "dist", "public"], // lint 설정을 무시할 설정 파일
+  "overrides": [
+    // 일부 파일에만 다른 lint 적용하고 싶을 때
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    // "ecmaVersion": 6 // 사용할 ECMAScript 버전
+    // "sourceType": "module" // parser의 export 형태를 설정
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "no-var": "error", // var 금지
+    "no-unused-vars": "error", // 사용하지 않는 변수 금지
+    "no-console": "off" // 콘솔 로그 사용 가능 (콘솔 로그 사용시 경고 → ["warn", { "allow": ["warn", "error", "info"] }] )
+  }
+}

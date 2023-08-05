@@ -36,8 +36,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
     "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
-    "tsconfig-paths-webpack-plugin": "^4.1.0"
+    "style-loader": "^3.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
@@ -60,11 +59,13 @@
     "eslint-config-prettier": "^8.9.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-storybook": "^0.6.13",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
     "prettier": "^3.0.0",
     "shx": "^0.3.4",
     "storybook": "^7.2.1",
     "ts-loader": "^9.4.4",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
     "typescript": "^5.1.6",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",

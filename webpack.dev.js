@@ -7,6 +7,11 @@ module.exports = merge(config, {
   devServer: {
     historyApiFallback: true,
     port: 3000,
+    open: true,
     hot: true,
+  },
+  watchOptions: {
+    poll: true,
+    ignored: "/node_modules/",
   },
 });

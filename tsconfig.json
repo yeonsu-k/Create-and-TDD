@@ -1,6 +1,17 @@
 {
   "compilerOptions": {
-    "baseUrl": "src", // import시 루트 url설정
+    "baseUrl": "./src", // import시 루트 url설정
+    "paths": {
+      // baseUrl 기준으로 추가 경로
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@features/*": ["features/*"],
+      "@hooks/*": ["hooks/*"],
+      "@services/*": ["services/*"],
+      "@store/*": ["store/*"],
+      "@styles/*": ["styles/*"],
+      "@stories/*": ["stories/*"]
+    },
     "target": "es5", // 타입스크립트 파일을 어떤 버전의 자바스크립트로 바꿔줄지
     "module": "esnext", // 사용할 import 문법
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -16,5 +27,5 @@
     "esModuleInterop": true, // 모든 imports에 대한 namespace 생성을 통해 CommonJS와 ES Modules 간의 상호작용의 가능
     "forceConsistentCasingInFileNames": true // 일관되지 않는 참조의 허용
   },
-  "include": ["src"]
+  "include": ["src"] // 컴파일 할 때 포함할 폴더나 파일
 }

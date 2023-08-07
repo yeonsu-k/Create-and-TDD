@@ -3,10 +3,16 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
-  "ignorePatterns": ["build", "dist", "public"], // lint 설정을 무시할 설정 파일
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended"
+  ],
+  "ignorePatterns": ["webpack.**.js", "jest.config.ts", "setupTest.ts"], // lint 설정을 무시할 설정 파일
   "overrides": [
     // 일부 파일에만 다른 lint 적용하고 싶을 때
   ],
@@ -15,7 +21,7 @@
     // "ecmaVersion": 6 // 사용할 ECMAScript 버전
     // "sourceType": "module" // parser의 export 형태를 설정
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "@typescript-eslint", "jest"],
   "rules": {
     "no-var": "error", // var 금지
     "no-unused-vars": "error", // 사용하지 않는 변수 금지

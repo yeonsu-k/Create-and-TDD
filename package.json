@@ -3,19 +3,16 @@
   "version": "1.0.0",
   "description": "초기 세팅 및 TDD 연습 레포",
   "main": "index.js",
-  "homepage": "https://yeonsu-k.github.io/Create-and-TDD",
+  "homepage": "https://yeonsu-k.github.io/Create-and-TDD/home",
   "scripts": {
     "test": "jest --watchAll",
-    "testClear": "jest --clearCache",
-    "dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack --config webpack.dev.js",
-    "format": "prettier --cache --write .",
-    "lint": "eslint --cache .",
-    "predeploy": "npm run build && shx cp build/index.html build/404.html",
-    "deploy": "gh-pages -d build",
+    "start": "webpack-dev-server --config webpack.dev.js",
     "storybook": "storybook dev -p 6006",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "format": "prettier --cache --write .",
+    "predeploy": "npm run build && shx cp build/index.html build/404.html",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

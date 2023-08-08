@@ -29,5 +29,6 @@
     "esModuleInterop": true, // 모든 imports에 대한 namespace 생성을 통해 CommonJS와 ES Modules 간의 상호작용의 가능
     "forceConsistentCasingInFileNames": true // 일관되지 않는 참조의 허용
   },
-  "include": ["src", "jest.config.ts", "setupTest.ts"] // 컴파일 할 때 포함할 폴더나 파일
+  "include": ["src", "jest.config.ts", "setupTest.ts"], // 컴파일 할 때 포함할 폴더나 파일
+  "exclude": ["cypress", "cypress.config.ts"]
 }

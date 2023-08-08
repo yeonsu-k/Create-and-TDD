@@ -31,12 +31,8 @@ module.exports = {
   },
   output: {
     path: __dirname + "/build",
-    publicPath: ".",
+    publicPath: "/",
     filename: "bundle.js",
-  },
-  devServer: {
-    historyApiFallback: true,
-    static: "./build",
   },
   plugins: [
     new HtmlWebpackPlugin({

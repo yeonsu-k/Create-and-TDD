@@ -12,6 +12,6 @@ module.exports = merge(config, {
   },
   watchOptions: {
     poll: true,
-    ignored: "/node_modules/",
+    ignored: ["**/node_modules", "**/.storybook", "/src/stories", "**/cypress", "/src/__test__"],
   },
 });

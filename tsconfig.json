@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".", // import시 루트 url설정
+    "baseUrl": "./", // import시 루트 url설정
     "paths": {
       // baseUrl 기준으로 추가 경로
       "src/*": ["src/*"],

@@ -1,4 +1,5 @@
 const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const tsConfigPath = path.resolve(__dirname, "./tsconfig.json");
@@ -12,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.(ts|tsx)$/,
         use: ["babel-loader", "ts-loader"],
       },
       {
@@ -30,11 +31,12 @@ module.exports = {
     ],
   },
   output: {
-    path: __dirname + "/build",
+    path: path.resolve(__dirname, "build"),
     publicPath: ".",
     filename: "bundle.js",
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       filename: "index.html",

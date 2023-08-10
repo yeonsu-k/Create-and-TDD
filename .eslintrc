@@ -10,6 +10,8 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
     "plugin:jest/recommended",
     "plugin:cypress/recommended"
   ],

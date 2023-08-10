@@ -28,6 +28,7 @@
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.3",
     "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
     "css-loader": "^6.8.1",
     "gh-pages": "^5.0.0",
     "node-sass": "^9.0.0",

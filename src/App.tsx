@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, Navigate, Route, Routes } from "react-router-dom";
-import MainPage from "pages/MainPage";
-import LoginPage from "pages/LoginPage";
-import SignupPage from "pages/SignupPage";
+import MainPage from "@pages/MainPage";
+import LoginPage from "@pages/LoginPage";
+import SignupPage from "@pages/SignupPage";
 
 const App = () => (
   <>

@@ -10,7 +10,8 @@
       "@features/*": ["src/features/*"],
       "@pages/*": ["src/pages/*"],
       "@store/*": ["src/store/*"],
-      "@styles/*": ["src/styles/*"]
+      "@styles/*": ["src/styles/*"],
+      "@stories/*": ["src/stories/*"]
     },
     "target": "es5", // 타입스크립트 파일을 어떤 버전의 자바스크립트로 바꿔줄지
     "module": "esnext", // 사용할 import 문법
@@ -27,6 +28,6 @@
     "esModuleInterop": true, // 모든 imports에 대한 namespace 생성을 통해 CommonJS와 ES Modules 간의 상호작용의 가능
     "forceConsistentCasingInFileNames": true // 일관되지 않는 참조의 허용
   },
-  "include": ["src", "jest.config.ts", "setupTest.ts"], // 컴파일 할 때 포함할 폴더나 파일
+  "include": ["src", "jest.config.ts", "config/setupTest.ts", "tsconfig.json"], // 컴파일 할 때 포함할 폴더나 파일
   "exclude": ["cypress", "cypress.config.ts"]
 }

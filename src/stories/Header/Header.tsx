@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "stories/Button/Button";
+import { Button } from "@stories/Button/Button";
 import "./header.scss";
 
 type User = {

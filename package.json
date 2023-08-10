@@ -6,7 +6,7 @@
   "homepage": "https://yeonsu-k.github.io/Create-and-TDD/home",
   "scripts": {
     "test": "jest --watchAll",
-    "build": "webpack --config config/webpack.prod.js",
+    "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config config/webpack.dev.js",
     "format": "prettier --cache --write .",
     "cypress": "cypress open",

@@ -22,6 +22,6 @@ describe("로그인", () => {
     // login-button dom 요소가 존재하는지 확인 후 클릭 이벤트 발생
     cy.get("[data-cy=login-button]").should("exist").click();
     // 페이지가 /home으로 이동되었는지 검증
-    cy.url().should("eq", "http://localhost:3000/");
+    cy.url().should("eq", "http://localhost:3000/home");
   });
 });

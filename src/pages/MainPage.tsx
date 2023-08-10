@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "styles/Main.module.scss";
+import styles from "@styles/Main.module.scss";
 
 const MainPage = () => {
   const [number, setNumber] = useState<number>(0);

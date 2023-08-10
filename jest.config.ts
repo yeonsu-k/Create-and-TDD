@@ -8,13 +8,13 @@ const jestConfig: JestConfigWithTsJest = {
     "^.+\\.(ts|tsx)$": [
       "ts-jest",
       {
-        tsconfig: "tsconfig.jest.json",
+        tsconfig: "config/tsconfig.jest.json",
         babel: true,
       },
     ],
   },
   modulePaths: ["<rootDir>"],
-  setupFilesAfterEnv: ["<rootDir>/setupTest.ts"], // 각각의 테스트 전에 실행할 모듈을 경로(setupTest를 이용하여 환경 설정)
+  setupFilesAfterEnv: ["<rootDir>/config/setupTest.ts"], // 각각의 테스트 전에 실행할 모듈을 경로(setupTest를 이용하여 환경 설정)
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
   moduleNameMapper: {
     "\\.(css|scss)$": "identity-obj-proxy",

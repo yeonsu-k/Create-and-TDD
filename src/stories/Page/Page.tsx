@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "stories/Header/Header";
+import { Header } from "@stories/Header/Header";
 import "./page.scss";
 
 type User = {

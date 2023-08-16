@@ -22,6 +22,7 @@ const jestConfig: JestConfigWithTsJest = {
     "^@hooks/(.*)$": "<rootDir>/src/hooks/$1",
     "^@assets/(.*)$": "<rootDir>/src/assets/$1",
     "^@components/(.*)$": "<rootDir>/src/components/$1",
+    "^@constants/(.*)$": "<rootDir>/src/constants/$1",
     "^@features/(.*)$": "<rootDir>/src/features/$1",
     "^@pages/(.*)$": "<rootDir>/src/pages/$1",
     "^@store/(.*)$": "<rootDir>/src/store/$1",

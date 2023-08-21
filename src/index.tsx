@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { store } from "@hooks/conifgStore";
 import { Provider } from "react-redux";
 import App from "./App";
+import "./App.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
